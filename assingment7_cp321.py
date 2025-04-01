@@ -50,7 +50,7 @@ df = pd.DataFrame(data, columns=['Year', 'Winner', 'Runner-up', 'Country', 'Wins
 
 # Initialize Dash app
 app = dash.Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     html.H1("FIFA World Cup Dashboard"),
 
